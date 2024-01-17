@@ -3,7 +3,7 @@ import './App.css'
 import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css';
 import { MainContainer, ChatContainer, MessageList, Message, MessageInput, TypingIndicator } from "@chatscope/chat-ui-kit-react"
 
-const API_KEY="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";
+const API_KEY="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";
 
 function App() {
   const[typing,setTyping]=useState(false);
@@ -77,8 +77,8 @@ const apiRequestBody={
 
   return (
     <div className='App'>
-      <h1>CHATBOT AI</h1>
-      <div style={{ position: "relative", height: "800px", width: "700px" }}>
+      <h1 className='text-3xl md:text-4xl lg:text-4xl mb-6' >CHATBOT</h1>
+      <div className='md:relative lg:h-[550px] md:h-80 sm:h-72 h-[550px] w-full md:w-96 lg:w-96 mx-auto'>
         <MainContainer className='main-container'>
           <ChatContainer className='chat-container'>
             <MessageList
